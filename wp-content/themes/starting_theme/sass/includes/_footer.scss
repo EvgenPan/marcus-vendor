@@ -1,0 +1,141 @@
+footer {
+  background-color: $brand-black;
+  color: $grey60;
+
+  .footer_top_fluid{
+.row{
+  align-items: flex-start;
+  @include _media-lg-down() {
+    justify-content: center;
+  }
+  @include _media-md-down() {
+    justify-content: flex-start;
+  }
+}
+  .footer_logo {
+    img {
+      height: 85px;
+      width: 100px;
+      @include _media-md-down() {
+       width: 100px;
+
+      }
+      }
+    @include _media-lg-down() {
+      max-width: 100%;
+      flex: 100%;
+      text-align: center;
+    }
+  }
+  .footer_menu {
+    a {
+      font-family: $family-base;
+      font-style: normal;
+      font-weight: 400;
+      font-size: 18px;
+      color: $grey40;
+      &:hover{
+        color: $white;
+      }
+      @include _media-big-down() {
+      }
+      @include _media-lg-down() {
+        font-size: 16px;
+      }
+      @include _media-md-down() {
+        font-size: 15px;
+      }
+    }
+    li{
+      margin-bottom: 10px;
+    }
+    @include _media-xs-down() {
+    display: block;
+      li{
+        padding-right: 0;
+      }
+    }
+    .current-menu-item {
+      a{
+        color: $brand-yellow;
+      }
+    }
+  }
+.footer_left {
+  display: flex;
+  justify-content: center;
+  li:not(:last-child){
+    padding-bottom: 16px;
+  }
+  @include _media-md-down() {
+    justify-content: flex-start;
+  }
+}
+.footer_center{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  @include _media-small-down() {
+    justify-content: flex-start;
+  }
+  }
+  }
+.footer_bottom_fluid{
+  text-align: center;
+  .footer_bottom{
+    p{
+      color:$grey60;
+      font-size: 12px;
+      font-family: $family-base;
+      a{
+        color:$grey60;
+        text-decoration: underline;
+      }
+    }
+  }
+}
+  .col-menu-f{
+    @include _media-small-down(){
+      padding-left: 0;
+    }
+  }
+  .copyright_f{
+    display: inline-block;
+    .textwidget{
+      display: inline-block;
+    }
+  }
+  #menu-footer-social{
+    display: flex;
+    li{
+      margin-right: 15px;
+    }
+    a {
+      display: inline-block;
+      width: 30px;
+      height: 30px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      border-radius: 25px;
+      border: 2px solid $grey40;
+      transition: background-color,color 0.25s ease;
+      i{
+        font-size: 16px;
+      }
+&:hover{
+  background-color: $brand-blue;
+  color: #fff;
+}
+    }
+   li:last-child{
+      margin-right: 0;
+    }
+   @media(max-width:767px){
+      justify-content: center;
+    }
+  }
+  .footer_logo{
+    text-align: center;
+  }
+}

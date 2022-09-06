@@ -1,0 +1,23 @@
+/*PAGE 404*/
+.block_error {
+background-color: $grey40;
+}
+.not_found{
+  min-height: 490px;
+  position: relative;
+  overflow: hidden;
+  background-size: contain;
+  h1{
+    color: $white;
+  }
+  @media (min-width:1540px){
+    border-radius: 10px;
+  }
+  .content_hero{
+    max-width: 610px;
+    p{
+      max-width: 420px;
+      color: $white;
+    }
+  }
+}
